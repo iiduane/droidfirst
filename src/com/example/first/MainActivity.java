@@ -2,9 +2,12 @@ package com.example.first;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.res.Configuration;
+import android.graphics.Color;
 import android.view.Menu;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -31,8 +34,17 @@ public class MainActivity extends Activity {
         lout.addView(textview1, text1loutp);
         this.addContentView(lout, lp);
         textview1.setText(getString(R.string.textstr2));
+        textview1.setTextColor(Color.rgb(222, 128, 222));
+        Toast.makeText(this, R.string.toast1, Toast.LENGTH_SHORT).show();
+        
     }
 
+    @Override
+    public void onConfigurationChanged(Configuration newConfig)
+    {
+    	super.onConfigurationChanged(newConfig);
+    	return;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

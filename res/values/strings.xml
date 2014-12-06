@@ -3,8 +3,10 @@
 
     <string name="app_name">first</string>
     <string name="action_settings">Settings</string>
+    <string name="action_settings2">preffer...</string>
     <string name="hello_world">Hello world!</string>
     <string name="ok">Unknown Hello world!</string>
+    <string name="toast1">This is Toast notification!</string>
     <string name="textstr2">textstr2, Unknown Hello world!</string>
 
 </resources>
